@@ -2,8 +2,8 @@ from .imageConverter import ImageConverter
 
 class TGA(ImageConverter):
     def __init__(self, name, width, height, isAtlas, numPages):
-        if(isAtlas != True or isAtlas != False):
-            raise ValueError("ERROR -> TGA: isAtlas must be a boolean!")
+        #if(isAtlas != True or isAtlas != False):
+        #    raise ValueError("ERROR -> TGA: isAtlas must be a boolean!")
         if(type(numPages) is not int):
             raise ValueError("ERROR -> TGA: numPages must be an integer!")
         

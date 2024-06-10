@@ -6,9 +6,6 @@ class TIFF(ImageConverter):
         super().__init__(name, width, height)
         if(dpi < 0):
             raise ValueError("ERROR -> TIFF: DPI Cannot be negative!")
-
-        if(saveLayers != True or saveLayers != False):
-            raise ValueError("ERROR -> TIFF: saveLayers must be a boolean!")
         
         if(type(metas) is not dict):
             raise ValueError("ERROR -> TIFF: Meta tags must be stored in a dictionary.")

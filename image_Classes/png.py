@@ -6,8 +6,8 @@ class PNG(ImageConverter):
         if(dpi < 0):
             raise ValueError("ERROR -> PNG: DPI Cannot be negative!")
 
-        if(isInterlaced != True or isInterlaced != False):
-            raise ValueError("ERROR -> PNG: IsInterlaced must be a boolean!")
+        #if(isInterlaced != True or isInterlaced != False):
+        #    raise ValueError("ERROR -> PNG: IsInterlaced must be a boolean!")
 
         self.dpi = dpi
         self.isInterlaced = isInterlaced

@@ -6,7 +6,7 @@ from .tiff import TIFF
 class ImageFactory:
     def create_Image(self, name, width, height, *args):
         self.imageConvs_Classes = {
-            "BPM": BMP,
+            "BMP": BMP,
             "PNG": PNG,
             "TGA": TGA,
             "TIFF": TIFF,
@@ -14,4 +14,8 @@ class ImageFactory:
 
         image_Class = self.imageConvs_Classes.get(name)
         return image_Class(name, width, height, *args)
+    
+    def convert_To(self, imageObject, destFormatName):
+        
+
 
