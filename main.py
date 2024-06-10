@@ -13,3 +13,6 @@ print(f"TGA Image Size:  {img_TGA.getFinalFileSize()} bytes.")
 
 img_TIFF = imageFactory.create_Image('TIFF', 1024, 768, 300, False, {'Author': 'Mehrbod Molla Kazemi','Professor': 'Dr. Pourya Khanzadi'})
 print(f"TIFF Image Size:  {img_TIFF.getFinalFileSize()} bytes.")
+
+img_Convert_TIFF_To_BMP = imageFactory.convert_To(img_TIFF, "BMP", 0.2)
+print(f"Converted image from TIFF to BMP Size:  {img_Convert_TIFF_To_BMP.getFinalFileSize()} bytes.")
