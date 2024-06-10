@@ -14,5 +14,9 @@ class PNG(ImageConverter):
 
     def getFinalFileSize(self):
         finalValue = self.width * self.height * self.dpi
+        if(self.isInterlaced):
+            return finalValue / 2.0
+        else:
+            return finalValue
         
     
